@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindWave</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <header>
+    <img src="logo.png" class="app-icon" alt="MindWave Logo" />
+    <h1>MindWave</h1>
+    <p class="tagline">Welcome – Select your current emotion to begin</p>
+    <button id="themeToggle" class="btn secondary">Switch to Dark Theme</button>
+  </header>
+
+  <div class="emoji-options">
+    <div class="emoji-card" onclick="selectMood('happy')"><div class="emoji">😀</div><span>Happy</span></div>
+    <div class="emoji-card" onclick="selectMood('sad')"><div class="emoji">😢</div><span>Sad</span></div>
+    <div class="emoji-card" onclick="selectMood('angry')"><div class="emoji">😠</div><span>Angry</span></div>
+  </div>
+
+  <div class="options hidden">
+    <button onclick="showJoke()">😂 Show Joke</button>
+    <button onclick="showMotivation()">💡 Motivation</button>
+    <button onclick="playMusic()">🎵 Listen to Music</button>
+    <button onclick="makeNote()">📝 Make Note</button>
+  </div>
+
+  <div id="dynamic-content"></div>
+  <script src="script.js"></script>
+</body>
+</html>
